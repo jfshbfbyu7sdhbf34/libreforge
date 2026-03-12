@@ -26,7 +26,7 @@ jobs:
       - name: Build Eco For Folia
         run: |
           chmod +x ./gradlew
-          ./gradlew clean build -Pfoilafix -x test
+          ./gradlew clean build shadowJar
 
       # 自动找 Folia 专用 JAR
       - name: Find Built JAR
